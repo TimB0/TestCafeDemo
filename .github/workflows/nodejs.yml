@@ -6,13 +6,12 @@ on: [push]
 jobs:
   build:
     name: Run TestCafe Tests
-    # runs-on: ubuntu-latest
-    runs-on: windows-latest
+    runs-on: windows-latest # runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
       - name: Install TestCafe from npm and Run Tests
-      - uses: DevExpress/testcafe-action@latest
+        uses: DevExpress/testcafe-action@latest
         with:
          args: "chrome tests"
       
