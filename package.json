@@ -1,14 +1,18 @@
 {
   "dependencies": {
-    "testcafe": "^1.14.0"
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "install-changed": "1.1.0",
+    "testcafe": "^1.14.2",
+    "testcafe-browser-provider-browserstack": "^1.13.2-alpha.1",
+    "testcafe-reporter-html": "^1.4.6"
   },
   "name": "testcafedemo",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "testcafe"
   },
-  "author": "",
+  "author": "Tim Boland",
   "license": "ISC",
   "description": ""
 }

@@ -4,7 +4,7 @@ import { Selector } from 'testcafe';
 
 const triedCheckbox = Selector("label").withText("I have tried TestCafe");
 
-fixture("Drag Fixture")
+fixture("TestCafe Example")
 .page("https://devexpress.github.io/testcafe/example/");
 
 test('Drag test', async t => {

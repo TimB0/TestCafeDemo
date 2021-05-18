@@ -3,7 +3,7 @@ import {Selector} from 'testcafe';
 const interfaceSelect = Selector('select#preferred-interface');
 const interfaceOptions = interfaceSelect.find('option');
 
-fixture("Select element from Dropdownlist")
+fixture("TestCafe Example")
 .page("https://devexpress.github.io/testcafe/example/");
 
 test('select element test', async t =>{
