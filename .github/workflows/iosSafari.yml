@@ -1,0 +1,10 @@
+name: ios Safari Tests
+
+on: [push]
+env:
+        BROWSERSTACK_ACCESS_KEY: "${{ secrets.BROWSERSTACK_ACCESS_KEY }}"
+        BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
+jobs:
+  test:
+    name: Run ios safari TestCafe on BrowserStack
+    runs-on: windows-latest
