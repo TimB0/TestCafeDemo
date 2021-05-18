@@ -1,0 +1,12 @@
+  459  testcafe all firstTest.js
+  460  testcafe all ./tests/firstTest.js
+  461  testcafe all ./tests/firstTest.js
+  462  testcafe all ./tests/TestSelector.js 
+  464  testcafe all ./tests/addRemoveElements.js 
+  465  testcafe all ./tests/addRemoveElements.js 
+  466  testcafe all ./tests/addRemoveElements.js 
+  467  testcafe -v
+  468  testcafe all ./tests/addRemoveElements.js 
+  502  testcafe "browserstack:chrome@79.0:Windows 10" ./tests/addRemoveElements.js 
+  504  vim broswerstackList.txt 
+  505  testcafe "browserstack:iPhone 12 Pro Max@14" ./tests/addRemoveElements.js
