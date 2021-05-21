@@ -1,8 +1,8 @@
-fixture("First Fixture")
+fixture("Test Only Fixture")
     .page("http://devexpress.github.io/testcafe/");
 
-test.only.page("https://devexpress.github.io/testcafe/example/")
-("First Test", async t =>{
+test.page("https://devexpress.github.io/testcafe/example/")
+("1st Test Only", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")
@@ -10,7 +10,8 @@ test.only.page("https://devexpress.github.io/testcafe/example/")
 });
 
 test.page("https://devexpress.github.io/testcafe/example/")
-("First Test", async t =>{
+//test.only.page("https://devexpress.github.io/testcafe/example/")
+("2nd Test Only", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")

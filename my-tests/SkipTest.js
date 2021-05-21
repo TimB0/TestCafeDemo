@@ -1,8 +1,8 @@
-fixture("First Fixture")
+fixture("Skip Fixture")
     .page("http://devexpress.github.io/testcafe/");
 
 test.skip.page("https://devexpress.github.io/testcafe/example/")
-("First Test", async t =>{
+("1st Skip Test", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")
@@ -10,7 +10,7 @@ test.skip.page("https://devexpress.github.io/testcafe/example/")
 });
 
 test.page("https://devexpress.github.io/testcafe/example/")
-("First Test", async t =>{
+("2nd Skip Test", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")

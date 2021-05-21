@@ -1,9 +1,9 @@
-fixture.meta('version','1')("First Fixture")
+fixture.meta('version','1')("Meta Data Fixture")
     .page("http://devexpress.github.io/testcafe/");
 
 test.meta('env','production')
 .page("https://devexpress.github.io/testcafe/example/")
-("First Test", async t =>{
+("1st MetaData Test", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")
@@ -12,7 +12,7 @@ test.meta('env','production')
 
 test
 .page("https://devexpress.github.io/testcafe/example/")
-("Second Test", async t =>{
+("2nd MetaData Test", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")

@@ -1,4 +1,4 @@
-fixture("First Fixture")
+fixture("Hooks Fixture")
     .page("http://devexpress.github.io/testcafe/")
     .beforeEach(async t =>{
         await t
@@ -8,7 +8,7 @@ fixture("First Fixture")
 
 test
 .page("https://devexpress.github.io/testcafe/example/")
-("First Test", async t =>{
+("First Hooks Test", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")
@@ -17,7 +17,7 @@ test
 
 test
 .page("https://devexpress.github.io/testcafe/example/")
-("Second Test", async t =>{
+("Second Hooks Test", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")
@@ -26,7 +26,7 @@ test
 
 test
 .page("https://devexpress.github.io/testcafe/example/")
-("Third Test", async t =>{
+("Third Hooks Test", async t =>{
     await t
         .typeText("#developer-name","TAU")
         .click("#macos")

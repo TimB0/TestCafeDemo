@@ -1,4 +1,4 @@
-fixture("First Fixture")
+fixture("Set Test Fixture")
     .page("http://devexpress.github.io/testcafe/");
 
 test.page("https://devexpress.github.io/testcafe/example/")

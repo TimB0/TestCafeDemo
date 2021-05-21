@@ -1,19 +1,17 @@
-import {Selector,ClientFunction} from 'testcafe';
+import {Selector} from 'testcafe';
 
 const developerName = Selector("#developer-name");
 const osOption = Selector("#macos");
 const submitButton = Selector("#submit-button");
 
-const getPageURL = ClientFunction(() => window.location.href); 
-
-
 fixture("TestCafe Example")
     .page("https://devexpress.github.io/testcafe/example/");
 
-test("Client Functions Test", async t => {
+test("Assertion Test", async t => {
  await t
+        .expect(developerName.value).eql('','input is empty')
         .typeText(developerName,"TAU")
+        .expect(developerName.value).eql('TAU','input contains "TAU"')
         .click(osOption)
-        .click(submitButton)
-        .expect(getPageURL()).contains('thank-you');
+        .click(submitButton);
 });
